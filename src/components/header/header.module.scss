@@ -1,9 +1,19 @@
 .root {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 64px;
-    padding: 0 20px;
+    padding: 40px;
+    width: 100%;
+    align-items: center;
+    background-color: #ffffff;
+    font-family: Matter;
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 16px;
+    }
 }
 
 .menu {
@@ -12,27 +22,191 @@
 }
 
 .menuButton {
-    padding-right: 22px;
-    padding-left: 22px;
-    font: var(--button-font);
+    display: none;
+    padding: 10px 22px;
+    font: var(--button-font, 600 1rem 'Inter', sans-serif);
+    background: none;
+    border: none;
+    color: #101010;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+    z-index: 300;
+    &:hover, &:focus {
+      background: #f2f2f2;
+      outline: none;
+    }
 }
 
-.active {
-    font-weight: 500;
+.mobileOnly {
+    @media (max-width: 809px) {
+        display: block;
+        font-size: 16px;
+    }
+    @media (min-width: 810px) {
+        display: none;
+        font-size: 16px;
+    }
+}
+
+.desktopNav {
+    @media (max-width: 809px) {
+        display: none;
+    }
+}
+
+.mobileMenu {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background: #fff;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.12);
+    z-index: 400;
+    transform: translateY(-30px) scaleY(0.97);
+    opacity: 0;
+    pointer-events: none;
+    transition:
+        opacity 0.3s cubic-bezier(.4,0,.2,1),
+        transform 0.3s cubic-bezier(.4,0,.2,1);
+    padding-top: 80px; // header height + safe space
+    @media (max-width: 809px) {
+        display: block;
+    }
+}
+.open {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    pointer-events: auto;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.18);
+    z-index: 350;
+    @media (min-width: 810px) {
+        display: none;
+    }
 }
 
 .logo {
     font: 700 18px/1.5 var(--my-pretty-font);
     height: fit-content;
 }
-
-@media (width < 455px) {
+@media (max-width: 1438px) and (min-width: 1200px) {
+    .root{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+} 
+@media (max-width: 1199px) and (min-width: 810px) {
+    .root{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media (max-width: 809px) and (min-width: 390px) {
+    .root{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media (width < 389px) {
     .root {
         display: flex;
         justify-content: center;
-        padding: 0px;
+        padding: 40px;
     }
     .logo {
         display: none;
     }
+}
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+         font-size: 20px;
+        line-height: 22px;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+         font-size: 18px;
+        line-height: 20px;
+    }
+    @media (max-width: 389px) {
+         font-size: 16px;
+        line-height: 18px;
+    }
+}
+.header2 {
+    line-height: 20px;
+    font-weight: 400;
+    min-height: 0px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 0px;
+    font-family: Matter;
+    font-size: 24px;
+    letter-spacing: -0.9px;
+    color: inherit;
+    outline: none !important;
+    box-shadow: none !important;
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+         font-size: 20px;
+        line-height: 22px;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+         font-size: 18px;
+        line-height: 20px;
+    }
+    @media (max-width: 389px) {
+         font-size: 16px;
+        line-height: 18px;
+    }
+}
+.navLink {
+    color: inherit;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+         font-size: 20px;
+        line-height: 22px;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+         font-size: 18px;
+        line-height: 20px;
+    }
+    @media (max-width: 389px) {
+         font-size: 16px;
+        line-height: 18px;
+    }
+}
+.navLink:focus,
+.navLink:active,
+.navLink:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.navLink:hover {
+    color: inherit;
+    background-color: transparent;
 }

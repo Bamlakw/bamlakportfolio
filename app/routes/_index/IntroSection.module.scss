@@ -1,0 +1,159 @@
+.section1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 100px;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 176px;
+    background-color: #ffffff;
+    flex-direction: row;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 100px;
+    }
+}
+
+.header1 {
+    max-width: 900px;
+    flex-basis: 0%;
+    flex-grow: 1;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: Matter;
+    letter-spacing: -0.9px;
+    color: #000;
+    width: 100%;
+    margin: 40px 0px;
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 32px;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 24px;
+        line-height: 26px;
+        width: 100%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 22px;
+        width: auto;
+        max-width: 900px;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 20px;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+.div1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 100px;
+    justify-content: space-between;
+    width: auto;
+    align-items: end;
+}
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+
+    @media (max-width: 768px) {
+        margin-top: 0;
+    }
+}
+
+.div3 {
+    align-items: stretch;
+    width: 100%;
+    justify-items: end;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+
+.div4 {
+}
+
+.p1 {
+    font-family: Matter;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.9px;
+    font-weight: 400;
+    padding-right: 0px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 0px;
+        letter-spacing: -0.6px;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: -0.3px;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: -0.1px;
+    }
+    @media (max-width: 389px) {
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0px;
+        margin: 10px;
+    }
+}
+
+.a1 {
+    text-decoration-line: underline;
+    line-height: 26px;
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    @media (max-width: 389px) {
+        font-size: 13px;
+        line-height: 15px;
+    }
+}
+
+.div5 {
+    font-size: 22px;
+    line-height: 24px;
+    justify-items: end;
+
+    @media (max-width: 480px) {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0px;
+        margin: 0px;
+    }
+}

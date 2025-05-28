@@ -1,0 +1,35 @@
+.ProjectsStyle {
+  display: grid;
+  gap: 32px;
+  width: 100%;
+  margin-top: 20px; 
+  margin-bottom: 50px;
+
+  // Default: 1 column for small screens
+  grid-template-columns: 1fr;
+
+  // 2 columns for large screens (1200px and up)
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.ProjectCard {
+  .title {
+    color: var(--title-color);
+    transition: color 0.3s ease;
+    
+  }
+  .description {
+    color: var(--description-color);
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    .title {
+      color: var(--title-hover-color); /* e.g. a different color on hover */
+    }
+    .description {
+      color: var(--description-hover-color); /* maybe stays same or changes differently */
+    }
+  }
+}

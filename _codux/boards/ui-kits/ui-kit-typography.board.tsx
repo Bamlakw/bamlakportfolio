@@ -8,7 +8,7 @@ export default createBoard({
         <div className={styles.container}>
             <div>
                 <span className={styles.uikit}>UI Kit</span>
-                <span className={styles.foundation}> | Foundation</span>
+                <span className={styles.foundation}>| Foundation</span>
                 <hr className={styles.hrSolid} />
                 <h3 className={styles.sectionTitle}>Typography</h3>
             </div>

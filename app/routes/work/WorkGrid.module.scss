@@ -1,0 +1,20 @@
+.section1 {
+  display: grid;
+  gap: 32px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+  grid-template-columns: 1fr;
+
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.workLink:hover .header1,
+.workLink:focus .header1 {
+  text-decoration: underline !important;
+  color: #000000;
+  text-decoration-color: #000000;
+}

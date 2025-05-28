@@ -18,7 +18,7 @@ export default createBoard({
             <div className={styles.container}>
                 <section>
                     <span className={styles.uikit}>UI Kit</span>
-                    <span className={styles.coreComponents}> | Core Components</span>
+                    <span className={styles.coreComponents}>| Core Components</span>
                     <hr className={styles.hrSolid} />
                     <h3 className={styles.sectionTitle}>Buttons</h3>
                 </section>

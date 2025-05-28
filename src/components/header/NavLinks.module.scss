@@ -1,0 +1,78 @@
+.ul1 {
+    align-items: center;
+    border: 1px solid #ffffff;
+    display: flex;
+    gap: 38px;
+    height: 39px;
+    flex-direction: row;
+    overflow: visible;
+
+    @media (max-width: 809px) {
+        flex-direction: column;
+        gap: 28px;
+        height: auto;
+        padding: 18px 0 32px 0;
+        width: 100%;
+        margin-top: 0;
+        align-items: flex-start; // <-- changed from end to start
+    }
+}
+
+.links {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start; // <-- changed from center to flex-start
+    font-size: 18px;
+    color: var(--bs-black);
+    line-height: 24.3px;
+    text-decoration-color: #101010;
+    letter-spacing: -0.5px;
+    font-family: Matter;
+    width: 100%; // <-- add this to make sure link fills width
+}
+
+.links a {
+    color: #101010;
+    text-decoration: none;
+    font-family: 'Matter';
+    transition: color 0.3s ease;
+    outline: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    //width: 100%; // <-- add this to make sure link fills width
+    //padding: 8px 0 8px 0px; // <-- add left padding for spacing
+}
+
+.links a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.links a:hover {
+    color: #000000;
+    text-decoration: underline;
+    text-decoration-color: #000000;
+}
+
+.nav1 {
+    outline: none;
+    width: 100%; // <-- ensure nav fills dropdown
+    display: flex;
+    justify-content: flex-start; // <-- changed from end to flex-start
+    align-items: flex-start; // <-- changed from end to start
+    position: static;
+    padding-top: 16px;
+    background-color: #fff;
+    align-content: flex-start; // <-- changed from end to start
+
+    @media (max-width: 809px) {
+        flex-direction: column;
+        padding: 8px 0;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background: none;
+    }
+}
