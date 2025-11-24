@@ -4,113 +4,91 @@ import classNames from 'classnames';
 
 export const IntroSection: React.FC = () => {
     return (
-        <section
+        <div
             className={classNames(
+                'min-h-screen',
+                'bg-white',
                 'flex',
-                'overflow-hidden',
-                'flex-wrap',
-                'gap-10',
-                'justify-between',
-                'w-full',
-                'max-md:max-w-full',
-                styles.section1
+                'items-center',
+                'justify-center',
+                'px-6',
+                'md:px-12',
+                'lg:px-20',
+                styles.div6
             )}
         >
-            <h1
-                className={classNames(
-                    'flex-1',
-                    'shrink',
-                    'gap-2.5',
-                    'self-start',
-                    'text-3xl',
-                    'leading-9',
-                    'basis-0',
-                    'min-w-60',
-                    'text-stone-950',
-                    'w-[548px]',
-                    'max-md:max-w-full',
-                    styles.header1
-                )}
-            >
-                I’m a multidisciplinary web designer working remotely with clients around the world
-                to build user-first websites, apps, and digital experiences. I specialize in
-                e-commerce, wellness, and purpose-driven brands.{' '}
-            </h1>
-            <div
-                className={classNames(
-                    'text-lg',
-                    'tracking-wide',
-                    'leading-6',
-                    'capitalize',
-                    'min-w-60',
-                    'text-stone-950',
-                    'w-[399px]',
-                    styles.div2
-                )}
-            >
-                <div
-                    className={classNames(
-                        'overflow-hidden',
-                        'w-full',
-                        'max-w-[399px]',
-                        styles.div4
-                    )}
-                >
-                    <div className={classNames('gap-2.5', 'self-stretch', 'w-full', styles.div1)}>
-                        <div className={styles.div5}>
-                            <p
-                                className={classNames(
-                                    "font-['SF_Pro_Display']",
-                                    'text-2xl',
-                                    'leading-[26px]',
-                                    'tracking-[0.42px]',
-                                    'capitalize',
-                                    'text-black',
-                                    styles.p1
-                                )}
-                            >
-                                Currently available for new projects‍
-                                <a
-                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=bamlakwtinsae@gmail.com&su=Let%27s%20Work%20Together"
-                                    className={classNames(
-                                        "font-['SF_Pro_Display']",
-                                        'text-2xl',
-                                        'leading-[26px]',
-                                        'tracking-[0.42px]',
-                                        'capitalize',
-                                        'text-black',
-                                        'underline',
-                                        styles.a1
-                                    )}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <br />
-                                    Send me an email ↗
-                                </a>
-                            </p>
-                        </div>
+            <div className={classNames('w-full', 'max-w-[1415px]', 'flex', styles.div7)}>
+                <div className="w-full max-w-[756px] flex flex-col justify-center gap-[18px]">
+                    <div
+                        className={classNames(
+                            'flex',
+                            'justify-center',
+                            'items-center',
+                            'p-[10px]',
+                            styles.div8
+                        )}
+                    >
+                        <p
+                            className={classNames(
+                                'text-[#1A1A1A]',
+                                'font-normal',
+                                'text-[20px]',
+                                'md:text-[22px]',
+                                'lg:text-[24px]',
+                                'leading-[24px]',
+                                'tracking-[-0.72px]',
+                                styles.p3
+                            )}
+                        >
+                            I&apos;m a multidisciplinary web designer working remotely with clients
+                            around the world to build user-first websites, apps, and digital
+                            experiences. I specialize in e-commerce, wellness, and purpose-driven
+                            brands.
+                        </p>
+                    </div>
 
-                        <div className={styles.div3}>
-                            <p
+                    <div
+                        className={classNames(
+                            'flex',
+                            'justify-start',
+                            'items-center',
+                            styles.contactRow
+                        )}
+                        style={{ padding: '0px' }}
+                    >
+                        <p
+                            className={classNames(
+                                'text-black',
+                                'font-normal',
+                                'text-[19px]',
+                                'md:text-[21px]',
+                                'lg:text-[23px]',
+                                'leading-[24px]',
+                                'tracking-[-0.72px]',
+                                styles.p2
+                            )}
+                        >
+                            Currently available for new projects
+                            <br />
+                            <a
+                                href="https://mail.google.com/mail/?view=cm&to=bamlakwtinsae@gmail.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className={classNames(
-                                    'self-stretch',
-                                    'my-auto',
-                                    'text-2xl',
-                                    'tracking-wide',
-                                    'leading-7',
-                                    'text-black',
-                                    styles.p1
+                                    'underline',
+                                    'decoration-solid',
+                                    'underline-offset-auto',
+                                    'hover:opacity-70',
+                                    'transition-opacity',
+                                    styles.a2
                                 )}
                             >
-                                Services: <br /> <br /> Web/App Design <br /> Design Consulting{' '}
-                                <br /> UX/UI Design <br /> E-Commerce <br />
-                                Branding
-                            </p>
-                        </div>
+                                Send me an email ↗
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };

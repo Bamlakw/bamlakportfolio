@@ -1,0 +1,121 @@
+.p1 {
+    font-family: Matter;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @media (max-width: 1438px) and (min-width: 1300px) {
+        font-size: 20px;
+    }
+    @media (max-width: 1299px) and (min-width: 810px) {
+        font-size: 18px;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 16px;
+    }
+    @media (max-width: 389px) {
+        font-size: 15px;
+    }
+}
+.p2 {
+    @media (max-width: 1438px) and (min-width: 1300px) {
+        font-size: 20px;
+    }
+    @media (max-width: 1299px) and (min-width: 810px) {
+        font-size: 18px;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 16px;
+    }
+    @media (max-width: 389px) {
+        font-size: 15px;
+    }
+}
+.p3 {
+    padding-bottom: 20px;
+    @media (max-width: 1438px) and (min-width: 1300px) {
+        font-size: 20px;
+    }
+    @media (max-width: 1299px) and (min-width: 810px) {
+        font-size: 18px;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 16px;
+    }
+    @media (max-width: 389px) {
+        font-size: 15px;
+    }
+}
+.p4 {
+    padding-bottom: 20px;
+    @media (max-width: 1438px) and (min-width: 1300px) {
+        font-size: 20px;
+    }
+    @media (max-width: 1299px) and (min-width: 810px) {
+        font-size: 18px;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 16px;
+    }
+    @media (max-width: 389px) {
+        font-size: 15px;
+    }
+}
+.div1 {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 100%;
+    min-height: 279px;
+    width: 900px;
+}
+.article1 {
+    align-items: center;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+.div2 {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    max-width: 900px;
+}
+.div3 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    gap: 24px;
+}
+.div4 {
+    font-weight: 400;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    border-bottom-width: 0.8px;
+    border-color: rgb(237, 237, 237);
+}
+.div5 {
+    display: grid;
+    align-items: flex-start;
+    font-weight: 400;
+    grid-template: none / auto 1fr auto auto;
+    gap: 160px;
+}
+.div6 {
+    font-weight: 400;
+    border-bottom-width: 0.8px;
+    border-color: rgb(237, 237, 237);
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+.div7 {
+    align-items: flex-start;
+    display: grid;
+    font-weight: 400;
+    gap: 16px;
+    grid-template: none / auto 1fr auto auto;
+}

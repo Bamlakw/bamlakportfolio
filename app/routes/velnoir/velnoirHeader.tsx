@@ -44,21 +44,8 @@ export const VelnoirHeader: React.FC = () => {
                         </h1>
                     </div>
                     <div className={styles.div7}>
-                        <div className={styles.div6}>VISIT</div>
-                        <div className={styles.div5}>
-                            <a
-                                href="https://www.figma.com/design/BV2XtsPDB1t8RDzk85NcR0/Velnoir?node-id=0-1&p=f&t=8polbR7I3CHDmV2O-0"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={classNames(
-                                    'text-blue-600',
-                                    'hover:underline',
-                                    styles.a1
-                                )}
-                            >
-                                Figma.com/Velnoir↗
-                            </a>
-                        </div>
+                        
+                        
                     </div>
                     <div className={classNames('flex', 'gap-2', 'items-center', styles.div1)}></div>
                 </div>

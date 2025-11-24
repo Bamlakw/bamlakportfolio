@@ -1,0 +1,244 @@
+.header1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 0px; // reduced for smaller screens
+    color: #111;
+}
+
+.div3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
+    gap: 30px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 40px;
+        padding: 10px 0;
+    }
+}
+
+.div1 {
+    font-family: 'Twk Lausanne', sans-serif !important;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 20px;
+    color: #111;
+    
+}
+
+.header2 {
+    font-family: 'Twk Lausanne', sans-serif !important;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: #111;
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 16px;
+        line-height: 20px;
+        width: 250px;
+    }
+    @media (max-width: 389px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.div2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 600px;
+    color: #111;
+    font-weight: 300;
+
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        width: 550px;
+    }
+    @media (max-width: 1199px) and (min-width: 987px) {
+        width: 400px;
+}
+    @media (max-width: 986px) and (min-width: 810px) {
+        width: 100%;
+}
+     @media (max-width: 809px) and (min-width: 390px) {
+        width: 100%;
+     }
+     @media (max-width: 389px) {
+        width: 100%;
+    } 
+}
+
+
+.p1 {
+    font-family: 'Twk Lausanne', sans-serif !important;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: -0.6px;
+    color: #111;
+    width: 600px;
+
+    @media (max-width: 1438px) and (min-width: 1300px) {
+        width: 550px;
+        font-size: 22px;
+        line-height: 27.5px;
+    }
+    @media (max-width: 1199px) and (min-width: 990px) {
+        width: 400px;
+        font-size: 20px;
+        line-height: 27.5px;
+}
+    @media (max-width: 999px) and (min-width: 810px) {
+        width: 100%;
+        font-size: 20px;
+        line-height: 27.5px;
+}
+    @media (max-width: 809px) and (min-width: 390px) {
+        width: 100%;
+        font-size: 18px;
+        line-height: 22.5px;
+    }
+    @media (max-width: 389px) {
+        width: 100%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.header4 {
+    font-family: 'Twk Lausanne', sans-serif !important;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.8px;
+    font-weight: 400;
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        width: 400px;
+        font-size: 30px;
+        line-height: 32px;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        width: 250px;
+        font-size: 22px;
+        line-height: 24.9px;
+    }
+    @media (max-width: 389px) {
+        width: 200px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.div5 {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Twk Lausanne', sans-serif !important;
+    color: #111;
+}
+
+.div6 {
+    font-family: 'Twk Lausanne', sans-serif !important;
+    font-weight: 600;
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 16px;
+        line-height: 24.9px;
+    }
+    @media (max-width: 389px) {
+        width: 200px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.div7 {
+    padding-top: 40px;
+}
+
+.div4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #111;
+}
+
+.p2 {
+    color: #000;
+    text-decoration: none;
+}
+
+.image,
+.logoimage {
+    max-width: 100%;
+}
+.a1 {
+    font-size: 20px;
+    color: inherit; // Use black from header2 (#111)
+    text-decoration: underline; // underline always, or change to 'none' if you want hover only
+    text-underline-offset: 3px; // subtle offset to make underline prettier
+
+    &:hover {
+        text-decoration: underline; // Keep underline on hover, or change style if you want
+    }
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        
+        font-size: 18px;
+        line-height: 27.5px;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 16px;
+        line-height: 27.5px;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 14px;
+        line-height: 22.5px;
+    }
+    @media (max-width: 389px) {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+.div8 {
+    width: 550px;
+
+    @media (max-width: 1438px) and (min-width: 1300px) {
+        width: 500px;
+    }
+    @media (max-width: 1299px) and (min-width: 810px) {
+        width: 400px;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        width: 300px;
+    }
+    @media (max-width: 389px) {
+        width: 250px;
+    }
+}

@@ -7,7 +7,7 @@ interface NavLinksProps {
 }
 
 function NavLinks({ onLinkClick }: NavLinksProps) {
-  const links = ['Work', 'About', 'Contact'];
+  const links = ['Work', 'Resume', ];
 
   return (
     <nav className={classNames(styles.nav1)}>

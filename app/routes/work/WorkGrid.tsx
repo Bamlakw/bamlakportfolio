@@ -1,107 +1,222 @@
 import * as React from 'react';
-import { WorkItem } from './WorkItem';
-import styles from './WorkGrid.module.scss';
-import classNames from 'classnames';
 import { NavLink } from '@remix-run/react';
+import classNames from 'classnames';
+import styles from './WorkGrid.module.scss';
 
-interface WorkGridItem {
-  imageUrl: string;
-  altText: string;
-  title: string;
-  overlayColor: string;
-  backgroundColor: string;
-  link?: string;
+interface Project {
+    year: string;
+    name: string;
+    type: string;
+    link?: string;
 }
 
-export const WorkGrid: React.FC = () => {
-  const portfolioItems: WorkGridItem[] = [
+const projects: Project[] = [
     {
-      imageUrl:
-        'https://cdn.builder.io/api/v1/image/assets%2F3b5bccefe22c459a955a742105476e08%2F65f741c6ba4043de912ef82d7fd885ec',
-      altText: 'Rush energy drink circular logo',
-      title: 'Rush - Branding + Web Design',
-      overlayColor: '#FF626C',
-      backgroundColor: '#ffffff',
-      link: '/rush',
+        year: '2025',
+        name: 'Outsider Drinks',
+        type: 'Concept Website Design, Ecommerce',
+        link: '/outsider',
     },
     {
-      imageUrl:
-        'https://cdn.builder.io/api/v1/image/assets%2F3b5bccefe22c459a955a742105476e08%2Fa07433154c5d4835918d0321bbf453f8',
-      altText: 'Beauty website with person applying skincare',
-      title: 'Nura — Web Design Concept',
-      overlayColor: '#B9336D',
-      backgroundColor: '#B9336D',
-      link: '/nura',
+        year: '2025',
+        name: 'Beast Blenders',
+        type: 'Ecommerce, Concept Website Re-Design',
+        link: '/beast',
     },
     {
-      imageUrl:
-        'https://cdn.builder.io/api/v1/image/assets%2F3b5bccefe22c459a955a742105476e08%2Fb9c3c70af511479fadadf155b22cb448',
-      altText: 'Phone case design with YUM text pattern',
-      title: 'Luna Glow - Branding + Web Design',
-      overlayColor: '#d6e6e5',
-      backgroundColor: '#f3f0f6',
-      link: '/luna',
+        year: '2025',
+        name: 'Living Things Soda',
+        type: 'Concept Website Re-Design',
+        link: '/livingthings',
     },
     {
-      imageUrl:
-        'https://cdn.builder.io/api/v1/image/assets%2F3b5bccefe22c459a955a742105476e08%2F5bd07de4f912493ea59063c2e832e7c2',
-      altText: 'Dark themed music artist website',
-      overlayColor: '#6F427D',
-      title: 'Yum — Web Design',
-      backgroundColor: '#1a1a1a',
-      link: '/yum',
+        year: '2025',
+        name: 'EnjoyaBowl Granola',
+        type: 'Concept Mobile Application Design',
+        link: '/enjoyabowl',
     },
     {
-      imageUrl:
-        'https://cdn.builder.io/api/v1/image/assets%2F3b5bccefe22c459a955a742105476e08%2Fe765aa3823474b7b874945fdd938675c',
-      altText: 'Fashion website with model',
-      title: 'Velnoir — Web Design Concept',
-      overlayColor: '#576650',
-      backgroundColor: '#0066ff',
-      link: '/velnoir',
+        year: '2024',
+        name: 'Rush Drinks',
+        type: 'Brand identity, Packaging, Webiste Design',
+        link: '/rush',
     },
     {
-      imageUrl:
-        'https://cdn.builder.io/api/v1/image/assets%2F3b5bccefe22c459a955a742105476e08%2Fdd503b3761f54228b8a3d439a54256d6',
-      altText: 'Beauty website with text and plant imagery',
-      title: 'Canim - Web Design Concept',
-      backgroundColor: '#ffffff',
-      overlayColor: '#1242A8',
-      link: '/velabeauty',
+        year: '2024',
+        name: 'Luna Glow',
+        type: 'Brand identity, Packaging, Webiste Design',
+        link: '/luna',
     },
-  ];
+    { year: '2024', name: 'Nura Sound', type: 'Ecommerce, Web Redesign', link: '/nura' },
+    { year: '2024', name: 'Yum', type: 'Brand identity, Mobile Application', link: '/yum' },
+    { year: '2024', name: 'One Zero', type: 'Website Design', link: '/onezero' },
+    { year: '2024', name: 'Velnoir', type: 'Ecommerce, Web Design', link: '/velnoir' },
+    { year: '2023', name: 'Bake Today', type: 'Mobile Application Design', link: '/baketoday' },
+    { year: '2023', name: 'Canim Perfume', type: 'Brand identity, Web Design', link: '/canim' },
+    { year: '2023', name: 'Aquen', type: 'Brand identity, Web Design', link: '/aquen' },
+    { year: '2023', name: 'Vela Beauty', type: 'Brand identity, Web Design', link: '/aquen' },
+    {
+        year: '2023',
+        name: 'Aurellie Luggage',
+        type: 'Brand identity, Website Design',
+        link: '/aurellie',
+    },
+    {
+        year: '2023',
+        name: 'Festival Fits',
+        type: 'Confidential Design Project',
+        link: '/festivalfits',
+    },
+];
 
-   return (
-    <section
-      className={classNames(
-        'grid grid-cols-2 gap-8 w-full max-md:grid-cols-2 max-sm:grid-cols-1',
-        styles.section1
-      )}
+const ArrowIcon = ({ title }: { title?: string }) => (
+    <svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={styles.arrowSvg}
+        aria-hidden={title ? 'false' : 'true'}
+        role={title ? 'img' : 'img'}
     >
-      {portfolioItems.map((item, index) => {
-        const workItem = (
-          <WorkItem
-            imageUrl={item.imageUrl}
-            title={item.title}
-            overlayColor={item.overlayColor}
-            backgroundColor={item.backgroundColor}
-            altText={item.altText}
-          />
-        );
+        {title ? <title>{title}</title> : null}
+        <path
+            d="M10.043 0.957031L9.336 1.66403L17.172 9.50003H1V10.5H17.172L9.336 18.336L10.043 19.043L19.086 10L10.043 0.957031Z"
+            fill="currentColor"
+        />
+    </svg>
+);
 
-        return item.link ? (
-          <NavLink
-            key={index}
-            to={item.link}
-            className={classNames('block', styles.workLink)}
-            style={{ textDecoration: 'none', color: 'inherit' }}
-          >
-            {workItem}
-          </NavLink>
-        ) : (
-          <div key={index}>{workItem}</div>
-        );
-      })}
-    </section>
-  );
+export const WorkGrid: React.FC = () => {
+    const disabledNames = [
+        'One Zero',
+        'Aquen',
+        'Vela Beauty',
+        'Festival Fits',
+        'Bake Today',
+        'Aurellie Luggage',
+    ];
+
+    return (
+        <section
+            className={classNames(
+                'min-h-screen',
+                'bg-white',
+                'pt-8',
+                'pb-16',
+                'px-2',
+                'sm:px-6',
+                'lg:px-8',
+                styles.section2
+            )}
+            aria-labelledby="work-grid-heading"
+        >
+            <div className={classNames('max-w-[1440px]', 'mx-auto', styles.div16)}>
+                {/* Desktop header row */}
+                <div
+                    className={classNames(
+                        'grid',
+                        'lg:hidden', // hide on large screens
+                        'grid-cols-1',
+                        'gap-1',
+                        'px-0',
+                        'py-[6px]',
+                        'mb-[11px]',
+                        styles.div12Mobile
+                    )}
+                    role="row"
+                >
+                    <div className={classNames('text-[#B7B7B7]', styles.divIndex)}>Index</div>
+                </div>
+
+                {/* Desktop header: visible at lg and above */}
+                <div
+                    className={classNames(
+                        'hidden',
+                        'lg:grid',
+                        'lg:grid-cols-[173px_351px_440px_auto]',
+                        'gap-1',
+                        'px-0',
+                        'py-[6px]',
+                        'mb-[11px]',
+                        styles.div12
+                    )}
+                    role="row"
+                >
+                    <div className={classNames('text-[#B7B7B7]', styles.div13)}>Year</div>
+                    <div className={classNames('text-[#B7B7B7]', styles.div14)}>Project</div>
+                    <div className={classNames('text-[#B7B7B7]', styles.div15)}>Type</div>
+                    <div aria-hidden="true" />
+                </div>
+
+                {/* Single DOM row per project — CSS handles wrapping and desktop grid */}
+                <div className="pt-px">
+                    {projects.map((project, index) => {
+                        const isDisabled = disabledNames.includes(project.name);
+                        const rowClasses = classNames(
+                            styles.div7,
+                            isDisabled ? styles.noHover : styles.interactive,
+                            // add a11y-focusable style on rows that are links so keyboard users see focus
+                            !isDisabled && project.link ? styles.focusable : null
+                        );
+
+                        const content = (
+                            <>
+                                <div className={styles.div8} aria-hidden="false">
+                                    <span className={styles.yearText}>{project.year}</span>
+                                </div>
+
+                                <div className={styles.div9}>
+                                    <span className={styles.titleText}>{project.name}</span>
+                                </div>
+
+                                <div className={styles.div10}>
+                                    <span className={styles.typeText}>{project.type}</span>
+                                </div>
+
+                                <div
+                                    className={styles.div11}
+                                    aria-hidden={isDisabled ? 'true' : 'false'}
+                                >
+                                    <ArrowIcon title={project.name} />
+                                </div>
+                            </>
+                        );
+
+                        if (!project.link || isDisabled) {
+                            return (
+                                <div
+                                    key={index}
+                                    className={rowClasses}
+                                    aria-disabled={isDisabled ? 'true' : undefined}
+                                    tabIndex={
+                                        isDisabled ? -1 : 0
+                                    } /* still keyboard-focusable if no link? keep 0 for reading/selecting rows if desired */
+                                >
+                                    {content}
+                                </div>
+                            );
+                        }
+
+                        return (
+                            <NavLink
+                                key={index}
+                                to={project.link}
+                                className={({ isActive }) =>
+                                    classNames(rowClasses, isActive ? styles.activeRow : null)
+                                }
+                                aria-label={`${project.name} — ${project.type}`}
+                                title={`${project.name} — ${project.type}`}
+                            >
+                                {content}
+                            </NavLink>
+                        );
+                    })}
+                </div>
+            </div>
+        </section>
+    );
 };
+
+export default WorkGrid;

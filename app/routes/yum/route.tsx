@@ -5,7 +5,7 @@ import { YumGallery } from './yumGallery';
 import { YumHeader } from './yumHeader';
 import classNames from 'classnames';
 import styles0 from './route.module.scss';
-import Frame6KkPng from '../../../src/assets/frame 6kk.png'; // 👈 import Link
+import Frame6KkPng from '../../../src/assets/yum/cover.webp'; // 👈 import Link
 import { useEffect } from 'react'; // 👈 add this
 
 import { Link } from 'react-router-dom'; // 👈 import Link

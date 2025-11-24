@@ -5,7 +5,7 @@ import { NuraHeader } from './nuraHeader';
 import styles from './nura.module.scss';
 import classNames from 'classnames';
 import styles0 from './route.module.scss';
-import Nura5Jpg from '../../../src/assets/nura 5.jpg';
+import Nura5Jpg from '../../../src/assets/nura/cover.webp';
 import { Link } from 'react-router-dom'; // 👈 import Link
 import { useEffect } from 'react'; // 👈 add this
 

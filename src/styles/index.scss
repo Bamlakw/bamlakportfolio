@@ -6,33 +6,33 @@
 
 /* 👇 This is your custom font-face block */
 @font-face {
-  font-family: 'Matter';
-  src: url('/src/assets/fonts/Matter-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Twk Lausanne';
+  src: url('../assets/fonts/TWK-Lausanne-Regular.ttf') format('truetype'); // adjust path relative to index.scss
+  font-weight: 400;
   font-style: normal;
 }
 
 :root {
-     font-family: 'Matter', sans-serif; /* Ensure Matter is the fallback font */
-    line-height: 1.5;
-    font-weight: 400;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-    
+  font-family: 'Twk Lausanne', sans-serif; /* <-- new font */
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
-/* Optional: apply Matter font to specific elements or globally */
 body {
-    margin: 0;
-    place-items: center;
-    justify-content: center;
-    min-width: 320px;
-    min-height: 100vh;
-    flex-grow: 1; /* Ensure main takes up available space */
+  font-family: inherit; /* inherit from :root */
+  margin: 0;
+  place-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  flex-grow: 1;
 }
+
     
 /* Remove focus outline on mouse click but keep it for keyboard navigation */
 :focus:not(:focus-visible) {

@@ -1,14 +1,12 @@
 import React from 'react';
 import styles from './RushGallery.module.scss';
 import classNames from 'classnames';
-import Frame42731911767Png from '../../../src/assets/frame 42731911767.png';
-import Frame42731911856Png from '../../../src/assets/frame 42731911856.png';
-import Frame42731911977Png from '../../../src/assets/frame 42731911977.png';
-import Png from '../../../src/assets/2222222.png';
-import Frame42731912166Png from '../../../src/assets/frame 42731912166.png';
-import Frame42731912288Png from '../../../src/assets/frame 42731912288.png';
-import Png0 from '../../../src/assets/1322.png';
-import Desktop2777Png from '../../../src/assets/desktop - 2777.png';
+import Png1 from '../../../src/assets/rush/image1.webp';
+import png2 from '../../../src/assets/rush/image2.webp';
+import Png3 from '../../../src/assets/rush/image3.webp';
+import Png4 from '../../../src/assets/rush/image4.webp';
+import Png5 from '../../../src/assets/rush/image5.webp';
+import Png6 from '../../../src/assets/rush/image6.webp';
 
 export const RushGallery: React.FC = () => {
     return (
@@ -34,7 +32,7 @@ export const RushGallery: React.FC = () => {
                 )}
             >
                 <img
-                    src={Frame42731911767Png}
+                    src={Png1}
                     alt="Luna Product Showcase"
                     className={classNames(
                         'w-full',
@@ -45,7 +43,7 @@ export const RushGallery: React.FC = () => {
                     )}
                 />
                 <img
-                    src={Frame42731911856Png}
+                    src={png2}
                     alt="Luna Brand Story"
                     className={classNames(
                         'w-full',
@@ -56,7 +54,7 @@ export const RushGallery: React.FC = () => {
                     )}
                 />
                 <img
-                    src={Frame42731911977Png}
+                    src={Png3}
                     alt="Luna Product Details"
                     className={classNames(
                         'w-full',
@@ -67,7 +65,7 @@ export const RushGallery: React.FC = () => {
                     )}
                 />
                 <img
-                    src={Png}
+                    src={Png4}
                     alt="Luna Brand Values"
                     className={classNames(
                         'w-full',
@@ -78,7 +76,7 @@ export const RushGallery: React.FC = () => {
                     )}
                 />
                 <img
-                    src={Frame42731912166Png}
+                    src={Png5}
                     alt="Luna Collection"
                     className={classNames(
                         'w-full',
@@ -89,7 +87,7 @@ export const RushGallery: React.FC = () => {
                     )}
                 />
                 <img
-                    src={Frame42731912288Png}
+                    src={Png6}
                     alt="Luna Collection"
                     className={classNames(
                         'w-full',
@@ -99,28 +97,8 @@ export const RushGallery: React.FC = () => {
                         styles.img6
                     )}
                 />
-                <img
-                    src={Png0}
-                    alt="Luna Collection"
-                    className={classNames(
-                        'w-full',
-                        'h-[1014.566px]',
-                        'max-lg:h-auto',
-                        'object-cover',
-                        styles.img6
-                    )}
-                />
-                <img
-                    src={Desktop2777Png}
-                    alt="Luna Collection"
-                    className={classNames(
-                        'w-full',
-                        'h-[1014.566px]',
-                        'max-lg:h-auto',
-                        'object-cover',
-                        styles.img6
-                    )}
-                />
+                
+                
             </div>
         </section>
     );

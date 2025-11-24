@@ -1,35 +1,184 @@
-.ProjectsStyle {
-  display: grid;
-  gap: 32px;
-  width: 100%;
-  margin-top: 20px; 
-  margin-bottom: 50px;
-
-  // Default: 1 column for small screens
-  grid-template-columns: 1fr;
-
-  // 2 columns for large screens (1200px and up)
-  @media (min-width: 700px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-.ProjectCard {
-  .title {
-    color: var(--title-color);
-    transition: color 0.3s ease;
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+/* keep smooth transitions for images */
+img {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: block;
+    max-width: 100%;
+}
+
+/* Base: mobile-first stacked layout */
+.div1,
+.div4 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Individual column blocks behave as flexible columns */
+.div2,
+.div3,
+.div5,
+.div6 {
+    display: flex;
+    flex-basis: 0%;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 6px;
+}
+
+/* First card's image uses absolute fill (placeholder keeps aspect) */
+.img1 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* absolute/top/left are provided by tailwind classes in JSX */
+    /* add a subtle hover lift for larger screens */
+    transform-origin: center;
+}
+
+/* Other images: responsive and keep aspect ratio */
+.img2 {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+.img3,
+.img4 {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* Headings */
+.header1,
+.header2,
+.header3,
+.header4 {
+    font-size: 18px;
+    line-height: 19.98px;
+    letter-spacing: -0.48px;
+}
+
+/* Section header */
+.header5 {
+    font-size: 23.8px;
+    letter-spacing: -0.72px;
+}
+
+/* Wrapper and spacing */
+.div7 {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.div8 {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.div9 {
+    /* visually match previous border behavior */
+    border-top: 1px solid #b7b7b7;
+}
+.div10 {
+    padding-top: 89px;
+}
+
+/* Hover effects (only on non-touch / larger screens) */
+@media (hover: hover) and (min-width: 640px) {
+    a.block:hover img {
+        transform: scale(1.02);
+    }
+}
+
+/* Tablet and up: row layout with two columns */
+@media (min-width: 640px) {
+    .div1,
+    .div4 {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    /* make sure images that were full-width on mobile still behave */
+    .img2,
+    .img3,
+    .img4 {
+        height: auto;
+    }
+
+    /* Slightly larger titles */
+    .header1,
+    .header2,
+    .header3,
+    .header4 {
+        font-size: 19px;
+    }
+}
+
+/* Desktop: increase gaps and adjust typography */
+@media (min-width: 900px) {
+    .div1,
+    .div4 {
+        gap: 16px;
+    }
+
+    .div2,
+    .div3,
+    .div5,
+    .div6 {
+        gap: 8px;
+    }
+
+    .header1,
+    .header2,
+    .header3,
+    .header4 {
+        font-size: 20px;
+    }
+
+    .header5 {
+        font-size: 32px;
+         @media (max-width: 389px) {
+    font-size: 24px;
+    letter-spacing: 0px;
+  }
+
+   @media (min-width: 1000px) and (max-width: 1600px) {
+    font-size: 28px;
     
   }
-  .description {
-    color: var(--description-color);
-    transition: color 0.3s ease;
-  }
+    }
 
-  &:hover {
-    .title {
-      color: var(--title-hover-color); /* e.g. a different color on hover */
+    /* ensure the first card's placeholder + image scale well on wide layouts */
+    /* the JSX uses a padding-top placeholder to lock aspect; we ensure anchor fills height */
+    a.block.w-full.relative.overflow-hidden {
+        /* allow the absolute image to occupy height set by the placeholder */
+        display: block;
     }
-    .description {
-      color: var(--description-hover-color); /* maybe stays same or changes differently */
-    }
-  }
+}
+
+/* Accessibility: ensure images don't overflow their parent */
+.div2 img,
+.div3 img,
+.div5 img,
+.div6 img {
+    max-width: 100%;
+    height: auto;
 }

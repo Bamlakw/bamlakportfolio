@@ -10,6 +10,12 @@ const NURA = '/nura';
 const VELNOIR = '/velnoir';
 const VELABEAUTY = '/velabeauty';
 const PERFUME = '/perfume';
+const BEAST = '/beast';
+const LIVINGTHINGS = '/livingthings';
+const OUTSIDER = '/outsider';
+const ENJOYABOWL = '/enjoyabowl';
+// const VELABEAUTY = '/velabeauty';
+// const PERFUME = '/perfume';
 
 export const ROUTES = {
     home: { path: HOME, to: () => HOME },
@@ -23,6 +29,12 @@ export const ROUTES = {
     velnoir: { path: VELNOIR, to: () => VELNOIR },
     velabeauty: { path: VELABEAUTY, to: () => VELABEAUTY },
     perfume: { path: PERFUME, to: () => PERFUME },
+    beast: { path: BEAST, to: () => BEAST },
+    Livingthings: { path: LIVINGTHINGS, to: () => LIVINGTHINGS },
+    outsider: { path: OUTSIDER, to: () => OUTSIDER },
+    enjoyabowl: { path: ENJOYABOWL, to: () => ENJOYABOWL },
+    // velabeauty: { path: VELABEAUTY, to: () => VELABEAUTY },
+    // perfume: { path: PERFUME, to: () => PERFUME },
     error: {
         path: ERROR,
         to: (title: string, message?: string) => `${ERROR}?title=${title}&message=${message}`,

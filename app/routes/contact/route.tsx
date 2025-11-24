@@ -1,6 +1,5 @@
 import { LoaderFunctionArgs } from '@remix-run/node';
 import { getUrlOriginWithPath } from '~/utils';
-import { ContactHeading } from './ContactHeading';
 import { ContactDescription } from './ContactDescription';
 import styles from './route.module.scss';
 import classNames from 'classnames';
@@ -11,8 +10,8 @@ export const loader = ({ request }: LoaderFunctionArgs) => {
 
 export default function Contact() {
     useEffect(() => {
-                        window.scrollTo(0, 0);
-                    }, []);
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className={styles.div2}>
             <section
@@ -45,7 +44,6 @@ export default function Contact() {
                         styles.div1
                     )}
                 >
-                    <ContactHeading />
                     <ContactDescription />
                 </div>
             </section>

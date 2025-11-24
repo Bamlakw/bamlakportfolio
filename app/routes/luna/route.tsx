@@ -7,6 +7,7 @@ import classNames from 'classnames';
 import { useLocation } from '@remix-run/react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom'; // ✅ Correct import for client-side routing
+import png1 from '../../../src/assets/luna/cover.webp';
 
 export const loader = ({ request }: LoaderFunctionArgs) => {
     return { canonicalUrl: getUrlOriginWithPath(request.url) };
@@ -53,7 +54,7 @@ export default function Luna() {
                 )}
             >
                 <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/3a6e29bbb8d31df477ba5ffee5de1c8f44aa3ef4"
+                    src={png1}
                     alt=""
                     className={styles.img2}
                 />

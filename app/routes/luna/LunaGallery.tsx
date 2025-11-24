@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './LunaGallery.module.scss';
 import classNames from 'classnames';
-import Png0 from '../../../src/assets/7777.png';
-import Png1 from '../../../src/assets/777777.png';
-import Png2 from '../../../src/assets/7.png';
-import Png3 from '../../../src/assets/88888.png';
-import Frame427319124LllPng from '../../../src/assets/frame 427319124lll.png';
+import Png1 from '../../../src/assets/luna/image1.webp';
+import png2 from '../../../src/assets/luna/image2.webp';
+import Png3 from '../../../src/assets/luna/image3.webp';
+import Png4 from '../../../src/assets/luna/image4.webp';
 
 export const LunaGallery: React.FC = () => {
     return (
@@ -31,7 +30,7 @@ export const LunaGallery: React.FC = () => {
                 )}
             >
                 <img
-                    src={Frame427319124LllPng}
+                    src={Png1}
                     alt="Luna Product Showcase"
                     className={classNames(
                         'w-full',
@@ -42,7 +41,7 @@ export const LunaGallery: React.FC = () => {
                     )}
                 />
                 <img
-                    src={Png0}
+                    src={png2}
                     alt="Luna Brand Story"
                     className={classNames(
                         'w-full',
@@ -53,7 +52,7 @@ export const LunaGallery: React.FC = () => {
                     )}
                 />
                 <img
-                    src={Png1}
+                    src={Png3}
                     alt="Luna Product Details"
                     className={classNames(
                         'w-full',
@@ -64,27 +63,18 @@ export const LunaGallery: React.FC = () => {
                     )}
                 />
                 <img
-                    src={Png2}
-                    alt="Luna Brand Values"
+                    src={Png4}
+                    alt="Luna Product Details"
                     className={classNames(
                         'w-full',
                         'h-[1014.566px]',
                         'max-lg:h-auto',
                         'object-cover',
-                        styles.img4
+                        styles.img3
                     )}
                 />
-                <img
-                    src={Png3}
-                    alt="Luna Collection"
-                    className={classNames(
-                        'w-full',
-                        'h-[1014.566px]',
-                        'max-lg:h-auto',
-                        'object-cover',
-                        styles.img5
-                    )}
-                />
+                
+                
             </div>
         </section>
     );

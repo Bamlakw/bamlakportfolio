@@ -1,14 +1,10 @@
 import React from 'react';
 import styles from './nuraGallery.module.scss';
 import classNames from 'classnames';
-import Png from '../../../src/assets/23.png';
-import Frame427319153Png from '../../../src/assets/frame 427319153.png';
-import Frame427319121Png from '../../../src/assets/frame 427319121.png';
-import Frame4273191201Png from '../../../src/assets/frame 427319120 (1).png';
-import Frame427319119Png from '../../../src/assets/frame 427319119.png';
-import Frame427319118Png from '../../../src/assets/frame 427319118.png';
-import Frame427319101Png from '../../../src/assets/frame 427319101.png';
-import Frame427319117FfPng from '../../../src/assets/frame 427319117ff.png';
+import Image1 from '../../../src/assets/nura/image1.webp';
+import image2 from '../../../src/assets/nura/image2.webp';
+import image3 from '../../../src/assets/nura/image3.jpg';
+import image4 from '../../../src/assets/nura/image4.webp';
 
 export const NuraGallery: React.FC = () => {
     return (
@@ -33,19 +29,10 @@ export const NuraGallery: React.FC = () => {
                     styles.div1
                 )}
             >
+
+
                 <img
-                    src={Frame427319153Png}
-                    alt="Luna Product Showcase"
-                    className={classNames(
-                        'w-full',
-                        'h-[1773px]',
-                        'max-lg:h-auto',
-                        'object-cover',
-                        styles.img2
-                    )}
-                />
-                <img
-                    src={Frame427319121Png}
+                    src={Image1}
                     alt="Luna Brand Story"
                     className={classNames(
                         'w-full',
@@ -56,7 +43,7 @@ export const NuraGallery: React.FC = () => {
                     )}
                 />
                 <img
-                    src={Frame4273191201Png}
+                    src={image2}
                     alt="Luna Product Details"
                     className={classNames(
                         'w-full',
@@ -66,59 +53,27 @@ export const NuraGallery: React.FC = () => {
                         styles.img3
                     )}
                 />
+
                 <img
-                    src={Png}
-                    alt="Luna Brand Values"
+                    src={image3}
+                    alt="Luna Brand Story"
                     className={classNames(
                         'w-full',
-                        'h-[1014.566px]',
+                        'h-[900px]',
                         'max-lg:h-auto',
                         'object-cover',
-                        styles.img4
+                        styles.img1
                     )}
                 />
                 <img
-                    src={Frame427319117FfPng}
-                    alt="Luna Collection"
+                    src={image4}
+                    alt="Luna Product Details"
                     className={classNames(
                         'w-full',
                         'h-[1014.566px]',
                         'max-lg:h-auto',
                         'object-cover',
-                        styles.img5
-                    )}
-                />
-                <img
-                    src={Frame427319119Png}
-                    alt="Luna Collection"
-                    className={classNames(
-                        'w-full',
-                        'h-[1014.566px]',
-                        'max-lg:h-auto',
-                        'object-cover',
-                        styles.img5
-                    )}
-                />
-                <img
-                    src={Frame427319118Png}
-                    alt="Luna Collection"
-                    className={classNames(
-                        'w-full',
-                        'h-[1014.566px]',
-                        'max-lg:h-auto',
-                        'object-cover',
-                        styles.img5
-                    )}
-                />
-                <img
-                    src={Frame427319101Png}
-                    alt="Luna Collection"
-                    className={classNames(
-                        'w-full',
-                        'h-[1014.566px]',
-                        'max-lg:h-auto',
-                        'object-cover',
-                        styles.img5
+                        styles.img3
                     )}
                 />
             </div>

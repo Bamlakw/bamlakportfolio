@@ -36,28 +36,14 @@ export const YumHeader: React.FC = () => {
                             <br />
                             → Brand ( Art Direction)
                             <br />
-                            → Website (Design, Copywriting)
+                            → Application (Design, Copywriting)
                             <br />
                             → Pitch deck (Strategy, Design, Copywriting)
                             <br />
                         </h1>
                     </div>
                     <div className={styles.div7}>
-                        <div className={styles.div6}>VISIT</div>
-                        <div className={styles.div5}>
-                            <a
-                                href="https://www.figma.com/design/TujLko0x6h8HAtf88wyLgJ/Yum?node-id=5-6816&p=f&t=5V4rDEDbQQKGmz5o-0"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={classNames(
-                                    'text-blue-600',
-                                    'hover:underline',
-                                    styles.a1
-                                )}
-                            >
-                                Figma.com/yum↗
-                            </a>
-                        </div>
+                        
                     </div>
                     <div className={classNames('flex', 'gap-2', 'items-center', styles.div1)}></div>
                 </div>

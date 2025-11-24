@@ -8,9 +8,11 @@
     padding-left: 3em;
     padding-top: 2em;
     padding-bottom: 1.2em;
-    background-color: #f2f2f2;
+    
 }
-
+.root, .root * {
+  font-family: 'Twk Lausanne', sans-serif !important;
+}
 .social {
     display: flex;
     height: 30px;
@@ -65,7 +67,7 @@
     }
 }
 .name {
-    font-family: Matter;
+    
 }
 .blur {
     font-size: 18px;

@@ -1,0 +1,1117 @@
+.div5 {
+    width: 100vw;
+    max-width: none;
+    overflow-x: hidden;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px 100px;
+    background-color: #fff;
+    font-family: Matter;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .section2 {
+        padding: 20px;
+    }
+}
+
+.div2,
+.div3,
+.div4 {
+    // width: 100%;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 10px;
+}
+
+.div4 {
+    font-size: 1.25rem;
+    text-align: left;
+    margin-top: 56px;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .div4 {
+        font-size: 1.125rem;
+        margin-top: 40px;
+        gap: 0.3rem;
+    }
+}
+
+.hr1 {
+    border: none; // clear out any default borders
+    border-top: 3px solid black;
+    // width: 100%;
+}
+.div1 {
+    width: 100%;
+    max-width: none;
+}
+.p1 {
+    line-height: 111%;
+    width: 70%;
+}
+.header1 {
+    font-size: 28px;
+    line-height: 31.08px;
+    padding-left: 10px;
+}
+.div6 {
+    font-weight: 400;
+    // overflow-x: auto;
+    // overflow-y: auto;
+    padding-top: 35px;
+    padding-bottom: 85px;
+}
+.div7 {
+    font-weight: 400;
+    border-bottom-width: 0.8px;
+    // border-top: 1px solid #ededed;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.div8 {
+    font-weight: 400;
+    display: grid;
+    // gap: normal 80px;
+    grid-template: none / 216px 261px 293px 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.div9 {
+    font-size: 21px;
+    line-height: 111%;
+    color: rgb(183, 183, 183);
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div10 {
+    color: rgb(183, 183, 183);
+    font-size: 21px;
+    line-height: 111%;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div11 {
+    color: rgb(183, 183, 183);
+    font-size: 21px;
+    line-height: 111%;
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div12 {
+    color: rgb(183, 183, 183);
+    font-size: 21px;
+    line-height: 111%;
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div13 {
+    font-weight: 400;
+    border-bottom-width: 0.8px;
+    border-color: #ededed;
+    border-top: 1px solid #ededed;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+.div14 {
+    font-weight: 400;
+    display: grid;
+    grid-template: none / 216px 261px 293px 1fr;
+    font-size: 21px;
+}
+.div15 {
+    font-weight: 400;
+    border-bottom-width: 0.8px;
+    border-top: 1px solid #ededed;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+.div16 {
+    font-weight: 400;
+    display: grid;
+    grid-template: none / 216px 261px 293px 1fr;
+    font-size: 21px;
+}
+.div17 {
+    font-weight: 400;
+    border-bottom-width: 0.8px;
+    border-top: 1px solid #ededed;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+.div18 {
+    font-weight: 400;
+    display: grid;
+    grid-template: none / 216px 261px 293px 1fr;
+    font-size: 21px;
+}
+.div19 {
+    font-weight: 400;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding-top: 35px;
+}
+.div20 {
+    font-weight: 400;
+    // border-top: 1px solid #ededed;
+    border-bottom-width: 0.8px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.div21 {
+    font-weight: 400;
+    display: grid;
+    grid-template: none / 216px 261px 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 21px;
+}
+.div22 {
+    color: rgb(183, 183, 183);
+    font-size: 21px;
+    line-height: 111%;
+}
+.div23 {
+    color: rgb(183, 183, 183);
+    font-size: 21px;
+    line-height: 111%;
+}
+.div24 {
+    color: rgb(183, 183, 183);
+    font-size: 21px;
+    line-height: 111%;
+}
+.div25 {
+    font-weight: 400;
+    display: grid;
+    grid-template: none / 216px 261px 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.div26 {
+    font-weight: 400;
+    padding-top: 10px;
+    border-top: 1px solid #ededed;
+    padding-bottom: 10px;
+    font-size: 21px;
+}
+.div27 {
+    font-size: 21px;
+    font-weight: 400;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div28 {
+    font-size: 21px;
+    font-weight: 400;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div29 {
+    font-size: 21px;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div30 {
+    font-size: 21px;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div31 {
+    font-size: 21px;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div32 {
+    font-size: 21px;
+}
+.div33 {
+    font-weight: 400;
+    display: grid;
+    grid-template: none / 216px 261px 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 21px;
+}
+.header2 {
+    font-weight: 400;
+    font-size: 28px;
+    padding-left: 10px;
+    // padding-bottom: 35px;
+}
+.div34 {
+    font-weight: 400;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.div35 {
+    font-weight: 400;
+    border-bottom-width: 0.8px;
+    border-top: 1px solid #ededed;
+    // padding-bottom: 20px;
+    padding-right: 10px;
+    padding-top: 20px;
+    font-size: 21px;
+    border-bottom-width: 0.8px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.div36 {
+    font-weight: 400;
+    display: grid;
+    grid-template: none / 211px 257px 289px 1fr;
+    font-size: 21px;
+}
+.div37 {
+    // font-weight: 400;
+    // border-top: 1px solid #ededed;
+    // padding-bottom: 20px;
+
+    // padding-right: 10px;
+    // padding-top: 20px;
+
+    font-weight: 400;
+    display: grid;
+    grid-template: none / 211px 257px 289px 1fr;
+    font-size: 21px;
+}
+.div38 {
+    font-weight: 400;
+    display: grid;
+    grid-template: none / 211px 257px 289px 1fr;
+    font-size: 21px;
+}
+.div39 {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    font-weight: 400;
+    border-bottom-width: 0.8px;
+    // border-top: 1px solid #ededed;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+
+    @media (max-width: 389px) {
+        padding-left:0px;
+    }
+}
+.div40 {
+    font-weight: 400;
+    white-space: normal;
+}
+.div41 {
+    font-weight: 400;
+}
+.div42 {
+    font-weight: 400;
+    display: grid;
+    grid-template: none / 216px 251px 289px 1fr;
+    font-size: 21px;
+    color: #b7b7b7;
+}
+.div43 {
+    font-weight: 400;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    font-size: 21px;
+    padding-top: 10px;
+    border: 0px solid #ededed;
+    white-space: normal;
+}
+.div44 {
+    font-weight: 400;
+    white-space: normal;
+    // overflow-x: auto;
+    // overflow-y: auto;
+}
+.div45 {
+    width: 100%;
+    padding-right: 0px;
+
+    white-space: normal; /* allows text to wrap to next line */
+    word-wrap: break-word; /* breaks long words if needed */
+    overflow-wrap: break-word;
+    padding-right: 30px;
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.section1 {
+    padding-bottom: 156px;
+}
+.section3 {
+    padding-bottom: 85px;
+}
+.section4 {
+    padding-bottom: 85px;
+}
+.div46 {
+    padding-top: 10px;
+    border-top: 1px solid #ededed;
+    padding-bottom: 10px;
+    font-size: 21px;
+}
+.header3 {
+    font-size: 21px;
+    padding-left: 10px;
+    border-top: 1px solid #ededed;
+    padding-top: 10px;
+}
+.div47 {
+    padding-right: 20px;
+}
+.div48 {
+    padding-right: 20px;
+    // max-width: 200px;
+}
+.div49 {
+    padding-right: 20px;
+}
+.div50 {
+    padding-right: 20px;
+}
+.div51 {
+    font-size: 21px;
+}
+
+/* -----------------------------
+   Responsive overrides (non-destructive)
+   Matches breakpoints: phone (<=420px), small tablet (421-767), tablet (768-1023),
+   desktop (1024-1439), wide (>=1440)
+   These override only layout/padding/min-width so your JSX can remain unchanged.
+   ----------------------------- */
+
+/* Very small screens: stack everything, remove forced min-widths that cause horizontal scroll */
+@media (max-width: 420px) {
+    /* Override Tailwind utility that adds min-width:800px in markup */
+    .min-w-\[800px\] {
+        min-width: 0 !important;
+        width: 100% !important;
+    }
+
+    /* Make scroll containers allow vertical flow instead of forcing horizontal scroll */
+    .div6,
+    .div19,
+    .div34,
+    .div44 {
+        overflow-x: visible;
+        @media (min-width: 200px) and (max-width: 767px) {
+            padding-top: 10px;
+        }
+    }
+
+    /* Collapse multi-column grids into a single column */
+    .div8,
+    .div14,
+    .div16,
+    .div18,
+    .div21,
+    .div25,
+    .div33,
+    .div36,
+    .div37,
+    .div38,
+    .div42,
+    .div43 {
+        grid-template-columns: 1fr !important;
+        gap: 12px;
+        @media (min-width: 200px) and (max-width: 767px) {
+            padding-left: 0px;
+        }
+    }
+
+    /* Reduce paddings so layout fits */
+    .div7,
+    .div13,
+    .div15,
+    .div17,
+    .div26,
+    .div35,
+    .div39,
+    .div44 {
+        // padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .p1 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .header1,
+    .header2,
+    .header3 {
+        font-size: 20px;
+        padding-left: 6px;
+        margin-bottom: 8px;
+
+        @media (min-width: 200px) and (max-width: 767px) {
+            padding-left: 0px;
+        }
+    }
+
+    .div45 {
+        padding-right: 20px;
+    }
+}
+
+/* Small phones and large phones / small tablets */
+@media (min-width: 421px) and (max-width: 767px) {
+    .min-w-\[800px\] {
+        min-width: 0 !important;
+        width: 100% !important;
+    }
+
+    /* Provide a compact two-column-ish layout: small fixed column + remaining content */
+    .div8,
+    .div14,
+    .div16,
+    .div18,
+    .div21,
+    .div25,
+    .div33 {
+        grid-template-columns: 140px 1fr !important;
+        gap: 16px;
+    }
+
+    .div6,
+    .div19,
+    .div34,
+    .div44 {
+        overflow-x: visible;
+    }
+
+    .p1 {
+        width: 92%;
+        font-size: 17px;
+        @media (max-width: 1438px) and (min-width: 1200px) {
+            font-size: 24px;
+            line-height: 120%;
+        }
+        @media (max-width: 1199px) and (min-width: 810px) {
+            font-size: 22px;
+            line-height: 120%;
+        }
+        @media (max-width: 809px) and (min-width: 390px) {
+            font-size: 20px;
+            line-height: 120%;
+        }
+        @media (max-width: 389px) {
+            font-size: 18px;
+            line-height: 120%;
+        }
+    }
+
+    .header1,
+    .header2,
+    .header3 {
+        font-size: 22px;
+        padding-left: 8px;
+        @media (max-width: 1438px) and (min-width: 1200px) {
+            font-size: 24px;
+            line-height: 120%;
+        }
+        @media (max-width: 1199px) and (min-width: 810px) {
+            font-size: 22px;
+            line-height: 120%;
+        }
+        @media (max-width: 809px) and (min-width: 390px) {
+            font-size: 20px;
+            line-height: 120%;
+        }
+        @media (max-width: 389px) {
+            font-size: 18px;
+            line-height: 120%;
+        }
+    }
+}
+
+/* Tablet sizes */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* ease horizontal pressure by allowing content to reflow */
+    .min-w-\[800px\] {
+        min-width: 0 !important;
+        width: 100% !important;
+    }
+
+    /* Restore more columns but keep them flexible so content doesn't overflow */
+    .div8,
+    .div14,
+    .div16,
+    .div18 {
+        /* drop one column to keep columns readable on tablet */
+        grid-template-columns: 216px 261px 1fr !important;
+        gap: 18px;
+    }
+
+    .div21,
+    .div25,
+    .div33 {
+        grid-template-columns: 216px 1fr !important;
+        gap: 18px;
+    }
+
+    .p1 {
+        width: 80%;
+        
+    font-size: 22px;
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    
+}
+    }
+
+    .header1,
+    .header2,
+    .header3 {
+         @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+    }
+}
+
+/* Desktop: keep original grids but ensure p1 sizing consistent */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .p1 {
+        width: 70%;
+    }
+
+    /* revert to your original 4-column grid where present */
+    .div8,
+    .div14,
+    .div16,
+    .div18,
+    .div36,
+    .div37,
+    .div38,
+    .div42,
+    .div43 {
+         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+    }
+}
+
+/* Wide desktop: no overrides necessary; keep natural layout */
+@media (min-width: 1440px) {
+    /* nothing special — your existing rules apply */
+}
+.div52 {
+    font-weight: 400;
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div53 {
+    font-weight: 400;
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div54 {
+    font-weight: 400;
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div55 {
+    font-weight: 400;
+
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+        overflow-x: none;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div56 {
+    font-weight: 400;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div57 {
+    font-weight: 400;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div58 {
+    font-weight: 400;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div59 {
+    font-weight: 400;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div60 {
+    font-weight: 400;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div61 {
+    font-weight: 400;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div62 {
+    font-weight: 400;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div63 {
+    font-weight: 400;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.a1 {
+    font-weight: 400;
+    padding-right: 20px;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div64 {
+    font-weight: 400;
+    padding-right: 20px;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: 400;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div65 {
+    font-weight: 400;
+    padding-right: 20px;
+    @media (max-width: 1438px) and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    @media (max-width: 1199px) and (min-width: 810px) {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    @media (max-width: 389px) {
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+.div66 {
+    font-weight: 400;
+    font-weight: 400;
+    display: grid;
+    grid-template: none / 216px 251px 289px 1fr;
+    font-size: 21px;
+    color: #b7b7b7;
+}
+.div67 {
+    font-weight: 400;
+    font-weight: 400;
+    display: grid;
+    grid-template: none / 216px 251px 289px 1fr;
+    font-size: 21px;
+    color: #b7b7b7;
+}
+.div68 {
+    font-weight: 400;
+    font-weight: 400;
+    display: grid;
+    grid-template: none / 216px 251px 289px 1fr;
+    font-size: 21px;
+    color: #b7b7b7;
+}
+.div69 {
+    font-weight: 400;
+    font-weight: 400;
+    display: grid;
+    grid-template: none / 216px 251px 289px 1fr;
+    font-size: 21px;
+    color: #b7b7b7;
+}
+.div70 {
+    padding-right: 20px;
+}

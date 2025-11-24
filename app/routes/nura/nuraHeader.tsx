@@ -42,21 +42,8 @@ export const NuraHeader: React.FC = () => {
                         </h1>
                     </div>
                     <div className={styles.div7}>
-                        <div className={styles.div6}>VISIT</div>
-                        <div className={styles.div5}>
-                            <a
-                                href="https://www.figma.com/design/XzDXKrfstsVnDeZLiFqHwn/Nura?node-id=4-22815&p=f&t=8ODGnnZp3CK0cmEq-0"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={classNames(
-                                    'text-blue-600',
-                                    'hover:underline',
-                                    styles.a1
-                                )}
-                            >
-                                Figma.com/Nura↗
-                            </a>
-                        </div>
+                       
+                        
                     </div>
                     <div className={classNames('flex', 'gap-2', 'items-center', styles.div1)}></div>
                 </div>

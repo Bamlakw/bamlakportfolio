@@ -41,7 +41,14 @@ export default function HomePage() {
                     styles.main1
                 )}
             >
-                <div className={classNames('w-full', 'max-md:max-w-full', styles.wrapping)}>
+                <div
+                    className={classNames(
+                        'w-full',
+                        'max-md:max-w-full',
+                        styles.wrapping,
+                        styles.div2
+                    )}
+                >
                     <IntroSection />
                     <div
                         className={classNames(

@@ -7,7 +7,7 @@ import classNames from 'classnames';
 import styles0 from './route.module.scss'; // ✅ Make sure this is installed
 import { Link } from 'react-router-dom'; // 👈 import Link
 import { useEffect } from 'react';
-import Png from '../../../src/assets/666.png'; // 👈 add this
+import Png from '../../../src/assets/velnoir/image1.png'; // 👈 add this
 
 export const loader = ({ request }: LoaderFunctionArgs) => {
     return { canonicalUrl: getUrlOriginWithPath(request.url) };

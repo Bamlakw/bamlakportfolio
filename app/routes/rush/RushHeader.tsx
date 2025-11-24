@@ -43,18 +43,7 @@ export const RushHeader: React.FC = () => {
                             <br />
                         </h1>
                     </div>
-                    <div className={styles.div7}>
-                        <div className={styles.div6}>VISIT</div>
-                        <div className={styles.div5}>
-                            <a
-                                href="https://www.figma.com/design/UpN0KASr2mYsd97Qb49S07/Rush?node-id=1-961&t=FgoGJ6xkcd1MW2MH-0"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={classNames('header2', 'custom-link', styles.a1)}
-                            >
-                                Figma.com/Rush↗
-                            </a>
-                        </div>
+                    
                     </div>
                     <div className={classNames('flex', 'gap-2', 'items-center', styles.div1)}></div>
                 </div>
@@ -92,7 +81,7 @@ export const RushHeader: React.FC = () => {
                         grab-and-go lifestyle.
                     </p>
                 </div>
-            </div>
+            
         </header>
     );
 };
