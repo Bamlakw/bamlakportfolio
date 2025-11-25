@@ -6,6 +6,64 @@
     justify-content: center;
     width: 100vw;
 }
+.p1 {
+    font-family: 'Twk Lausanne', sans-serif !important;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: -0.6px;
+    color: #111;
+    // width: 600px;
+
+    @media (max-width: 1536px) and (min-width: 1200px) {
+        font-size: 22px;
+        line-height: 111%;
+        padding: 50px 30px;
+        width: 100%;
+        max-width: 800px;
+        justify-items: start;
+        align-self: start;
+    }
+    @media (max-width: 1199px) and (min-width: 990px) {
+        width: 100%;
+        max-width: 800px;
+        font-size: 20px;
+        line-height: 111%;
+        padding: 50px 30px;
+        justify-items: start;
+        align-self: start;
+    }
+    @media (max-width: 999px) and (min-width: 810px) {
+        width: 100%;
+        font-size: 20px;
+        line-height: 27.5px;
+        padding: 50px 30px;
+        width: 100%;
+        max-width: 800px;
+        justify-items: start;
+        align-self: start;
+    }
+    @media (max-width: 809px) and (min-width: 390px) {
+        width: 100%;
+        font-size: 18px;
+        line-height: 22.5px;
+        padding: 50px 30px;
+        width: 100%;
+        max-width: 800px;
+        justify-items: start;
+        align-self: start;
+    }
+    @media (max-width: 389px) {
+        width: 100%;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 50px 30px;
+        width: 100%;
+        max-width: 800px;
+        justify-items: start;
+        align-self: start;
+    }
+}
 .div1 {
     align-items: center;
     display: flex;

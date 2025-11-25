@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 import styles from './beastGallery.module.scss';
 import classNames from 'classnames';
 import image1 from '../../../src/assets/beast/image1.mp4';
-import image2 from '../../../src/assets/beast/image2.png';
 import image3 from '../../../src/assets/beast/image3.webp';
 import image4 from '../../../src/assets/beast/image4.webp';
 import image5 from '../../../src/assets/beast/image5.webp';
@@ -107,17 +106,22 @@ export const BeastGallery: React.FC = () => {
                     </button>
                 </div>
 
-                <img
-                    src={image2}
-                    alt="Luna Product Details"
-                    className={classNames(
-                        'w-full',
-                        'h-[1014.566px]',
-                        'max-lg:h-auto',
-                        'object-cover',
-                        styles.img3
-                    )}
-                />
+                <p
+                        className={classNames(
+                            'flex-1',
+                            'text-3xl',
+                            'leading-9',
+                            'opacity-[0.96]',
+                            'text-stone-950',
+                            'max-md:text-2xl',
+                            'max-sm:text-2xl',
+                            styles.p1
+                        )}
+                    >
+                        Beast Blenders is a high-performance wellness brand focused on thoughtfully designed blending systems and hydration tools. For this concept project, I redesigned the existing website to create a more minimal, organized, and user-focused experience. <br/> <br/> The redesign emphasizes clarity, premium aesthetics, and intuitive navigation, making it easier for users to explore products, discover recipes, and engage with the brand while reflecting Beast’s modern, lifestyle-driven identity.
+                        <br />
+                        
+                    </p>
                 <img
                     src={image3}
                     alt="Luna Collection"

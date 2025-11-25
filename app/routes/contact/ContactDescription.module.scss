@@ -1,443 +1,248 @@
-.div1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    line-height: 30px;
-    letter-spacing: -0.6px;
-    width: 60%;
-    max-width: none;
-    padding: 0;
-    text-align: start; // optional for desktop
+/* WorkGrid.module.scss
+   Cleaned: removed duplicated blocks, consolidated media queries,
+   introduced a couple of small variables for clarity.
+   Mobile-first, desktop layout restored at >= 1024px.
+*/
 
-    @media (max-width: 768px) {
-        line-height: 26px;
-        font-size: 20px;
-        width: 80%;
-    }
-    @media (max-width: 400px) {
-        line-height: 26px;
-        font-size: 15px;
-        width: 80%;
-    }
+$muted: #b7b7b7;
+$text: #1a1a1a;
+$border: #ededed;
+$break-desktop: 1024px;
+$break-tablet-min: 768px;
+$break-tablet-max: 1023px;
 
-    a {
-        font-weight: 400;
-        text-decoration: underline;
-        word-break: break-word;
-    }
-}
-.emailLink {
-    all: unset; // This resets the browser's default link styles
-
-    font-family: 'Matter', sans-serif;
-    font-size: 24px;
-    color: #000000;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: color 0.2s ease;
-    letter-spacing: -0.6px;
-
-    &:hover {
-        color: #4b4b4b;
-    }
-    @media (max-width: 768px) {
-        line-height: 26px;
-        font-size: 20px;
-    }
-    @media (max-width: 400px) {
-        line-height: 26px;
-        font-size: 16px;
-    }
-}
-.para {
-    font-size: 24px;
-    font-family: 'Twk Lausanne', sans-serif !important;
-    max-width: 900px;
-    padding-right:20px;
-
-    @media (max-width: 1438px) and (min-width: 1200px) {
-        font-size: 24px;
-        max-width: 900px;
-    }
-    @media (max-width: 1199px) and (min-width: 810px) {
-        font-size: 22px;
-        width: 100%;
-        max-width: 60%;
-        padding-bottom: 80px;
-    }
-    @media (max-width: 809px) and (min-width: 390px) {
-        font-size: 20px;
-    }
-    @media (max-width: 389px) {
-        font-size: 18px;
-    }
-}
-
-.div5 {
-    width: 100vw;
-    max-width: none;
-    overflow-x: hidden;
-}
-
+/* Core */
 .section2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 40px 100px;
-    background-color: #fff;
-    font-family: Matter;
-    width: 100%;
+  width: 100%;
+  line-height: 26px;
+  -webkit-font-smoothing: antialiased;
 }
 
-@media (max-width: 768px) {
-    .section2 {
-        padding: 20px;
-    }
-}
-
-.div2,
-.div3,
-.div4 {
-    // width: 100%;
-    max-width: none;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    margin-top: 10px;
-}
-
-.div4 {
-    font-size: 1.25rem;
-    text-align: left;
-    margin-top: 56px;
-    gap: 2rem;
-}
-
-@media (max-width: 768px) {
-    .div4 {
-        font-size: 1.125rem;
-        margin-top: 40px;
-        gap: 0.3rem;
-    }
-}
-
-.hr1 {
-    border: none; // clear out any default borders
-    border-top: 3px solid black;
-    // width: 100%;
-}
-.div1 {
-    width: 100%;
-    max-width: none;
-}
-.p1 {
-    line-height: 111%;
-    width: 70%;
-}
-.header1 {
-    font-size: 28px;
-    line-height: 31.08px;
-    padding-left: 10px;
-}
-.div6 {
-    font-weight: 400;
-    overflow-x: auto;
-    overflow-y: auto;
-    padding-top: 35px;
-    padding-bottom: 85px;
-}
-.div7 {
-    font-weight: 400;
-    border-bottom-width: 0.8px;
-    // border-top: 1px solid #ededed;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-.div8 {
-    font-weight: 400;
-    display: grid;
-    // gap: normal 80px;
-    grid-template: none / 216px 261px 293px 1fr;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.div9 {
-    font-size: 21px;
-    line-height: 111%;
-    color: rgb(183, 183, 183);
-}
-.div10 {
-    color: rgb(183, 183, 183);
-    font-size: 21px;
-    line-height: 111%;
-}
-.div11 {
-    color: rgb(183, 183, 183);
-    font-size: 21px;
-    line-height: 111%;
-}
-.div12 {
-    color: rgb(183, 183, 183);
-    font-size: 21px;
-    line-height: 111%;
-}
-.div13 {
-    font-weight: 400;
-    border-bottom-width: 0.8px;
-    border-color: #ededed;
-    border-top: 1px solid #ededed;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 20px;
-}
-.div14 {
-    font-weight: 400;
-    display: grid;
-    grid-template: none / 216px 261px 293px 1fr;
-    font-size: 21px;
-}
-.div15 {
-    font-weight: 400;
-    border-bottom-width: 0.8px;
-    border-top: 1px solid #ededed;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 20px;
-}
+/* Defensive container width */
 .div16 {
-    font-weight: 400;
-    display: grid;
-    grid-template: none / 216px 261px 293px 1fr;
-    font-size: 21px;
+  width: 100%;
 }
-.div17 {
-    font-weight: 400;
-    border-bottom-width: 0.8px;
-    border-top: 1px solid #ededed;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 20px;
-}
-.div18 {
-    font-weight: 400;
-    display: grid;
-    grid-template: none / 216px 261px 293px 1fr;
-    font-size: 21px;
-}
-.div19 {
-    font-weight: 400;
-    overflow-x: auto;
-    overflow-y: auto;
-    padding-top: 35px;
-}
-.div20 {
-    font-weight: 400;
-    // border-top: 1px solid #ededed;
-    border-bottom-width: 0.8px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-.div21 {
-    font-weight: 400;
-    display: grid;
-    grid-template: none / 216px 261px 1fr;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 21px;
-}
-.div22 {
-    color: rgb(183, 183, 183);
-    font-size: 21px;
-    line-height: 111%;
-}
-.div23 {
-    color: rgb(183, 183, 183);
-    font-size: 21px;
-    line-height: 111%;
-}
-.div24 {
-    color: rgb(183, 183, 183);
-    font-size: 21px;
-    line-height: 111%;
-}
-.div25 {
-    font-weight: 400;
-    display: grid;
-    grid-template: none / 216px 261px 1fr;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.div26 {
-    font-weight: 400;
-    padding-top: 10px;
-    border-top: 1px solid #ededed;
-    padding-bottom: 10px;
-    font-size: 21px;
-}
-.div27 {
-    font-size: 21px;
-}
-.div28 {
-    font-size: 21px;
-}
-.div29 {
-    font-size: 21px;
-}
-.div30 {
-    font-size: 21px;
-}
-.div31 {
-    font-size: 21px;
-}
-.div32 {
-    font-size: 21px;
-}
-.div33 {
-    font-weight: 400;
-    display: grid;
-    grid-template: none / 216px 261px 1fr;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 21px;
-}
-.header2 {
-    font-weight: 400;
-    font-size: 28px;
-    padding-left: 10px;
-    // padding-bottom: 35px;
-}
-.div34 {
-    font-weight: 400;
-    overflow-x: auto;
-    overflow-y: auto;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-.div35 {
-    font-weight: 400;
-    border-bottom-width: 0.8px;
-    border-top: 1px solid #ededed;
-    // padding-bottom: 20px;
-    padding-right: 10px;
-    padding-top: 20px;
-    font-size: 21px;
-    border-bottom-width: 0.8px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-}
-.div36 {
-    font-weight: 400;
-    display: grid;
-    grid-template: none / 211px 257px 289px 1fr;
-    font-size: 21px;
-}
-.div37 {
-    // font-weight: 400;
-    // border-top: 1px solid #ededed;
-    // padding-bottom: 20px;
 
-    // padding-right: 10px;
-    // padding-top: 20px;
+/* Desktop header (visible >= 1024px) */
+.div12 {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 173px 351px 440px auto;
+  margin-bottom: 11px;
+}
+.div13,
+.div14,
+.div15 {
+  font-size: 23px;
+  letter-spacing: -0.72px;
+  color: $muted;
+}
 
-    font-weight: 400;
-    display: grid;
-    grid-template: none / 211px 257px 289px 1fr;
-    font-size: 21px;
+/* Mobile header (visible below 1024px) */
+.div12Mobile {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  margin-bottom: 11px;
+  padding: 6px 0;
 }
-.div38 {
-    font-weight: 400;
-    display: grid;
-    grid-template: none / 211px 257px 289px 1fr;
-    font-size: 21px;
+.divIndex {
+  font-size: 20px;
+  letter-spacing: -0.48px;
+  color: $muted;
 }
-.div39 {
-    white-space: normal;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-    font-weight: 400;
-    border-bottom-width: 0.8px;
-    border-top: 1px solid #ededed;
-    // padding-bottom: 20px;
-    // padding-left: 10px;
-    // padding-right: 10px;
-    // padding-top: 10px;
-}
-.div40 {
-    font-weight: 400;
-}
-.div41 {
-    font-weight: 400;
-}
-.div42 {
-    font-weight: 400;
-    display: grid;
-    grid-template: none / 289px 251px 289px 1fr;
-    font-size: 21px;
-    color: #b7b7b7;
-}
-.div43 {
-    font-weight: 400;
-    font-weight: 400;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    font-size: 21px;
-    padding-top: 10px;
-    border-top: 1px solid #ededed;
-}
-.div44 {
-    font-weight: 400;
-    overflow-x: auto;
-    overflow-y: auto;
-}
-.div45 {
-    width: 100%;
-    padding-right: 0px;
 
-    white-space: normal; /* allows text to wrap to next line */
-    word-wrap: break-word; /* breaks long words if needed */
-    overflow-wrap: break-word;
-    padding-right: 30px;
+/* ----------------- ROW (single DOM) ----------------- */
+
+/* Default mobile-first: flex + wrap → natural reflow to multiple lines */
+.div7 {
+  font-weight: 400;
+  padding: 10px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid $border;
+  overflow-wrap: anywhere;
+  word-wrap: anywhere;
+  color: $text;
+  transition: color .18s ease, background .18s ease;
+  background: transparent;
 }
-.section1 {
-    padding-bottom: 156px;
+
+/* Interactive vs non-interactive rows
+   NOTE: the React component applies .interactive only to rows that have a link.
+*/
+.interactive {
+  cursor: pointer;
+  transition: color 0.18s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+
+    /* Target all text inside the row */
+    .div8,
+    .div9,
+    .div10,
+    .div11 {
+      color: $muted;
+    }
+  }
 }
-.section3 {
-    padding-bottom: 85px;
+
+
+/* rows that must not change color on hover */
+.noHover,
+.noHover:hover {
+  color: $text;
+  cursor: default;
 }
-.section4 {
-    padding-bottom: 85px;
+
+/* Provide a focusable outline for keyboard users */
+.focusable:focus,
+.focusable:focus-visible,
+.interactive:focus,
+.interactive:focus-visible {
+//   outline: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 2px;
 }
-.div46 {
-    padding-top: 10px;
-    // border-top: 1px solid #ededed;
-    padding-bottom: 10px;
-    font-size: 21px;
+
+/* Year column styling (mobile) */
+.div7 > .div8 {
+  flex: 0 0 120px; /* stable column on mobile */
+  min-width: 56px;
+  font-size: clamp(15px, 2.6vw, 20px);
+  line-height: 1.04;
+  letter-spacing: -0.72px;
+  color: $text;
+  display: flex;
+  align-items: center;
 }
-.header3 {
-    font-size: 21px;
-    padding-left: 10px;
-    border-top: 1px solid #ededed;
-    padding-top: 10px;
+
+/* Project name (primary) - fluid and allowed to wrap */
+.div7 > .div9 {
+  flex: 1 1 220px;
+  min-width: 120px;
+  font-size: clamp(16px, 3.2vw, 24px);
+  line-height: 1.02;
+  letter-spacing: -0.72px;
+  color: $text;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  display: flex;
+  align-items: center;
 }
-.div47 {
-    padding-right: 20px;
+
+/* Type / description */
+.div7 > .div10 {
+  flex: 1 1 260px;
+  min-width: 120px;
+  font-size: clamp(16px, 2.6vw, 20px);
+  line-height: 1.12;
+  letter-spacing: -0.48px;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  display: flex;
+  align-items: center;
 }
-.div48 {
-    padding-right: 20px;
-    // max-width: 200px;
+
+/* Arrow */
+.div7 > .div11 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: $text;
+  margin-left: auto; /* pushes arrow to right when there's space */
 }
-.div49 {
-    padding-right: 20px;
+
+/* keep arrow SVG consistent */
+.arrowSvg {
+  width: 20px;
+  height: 20px;
 }
-.div50 {
-    padding-right: 20px;
+
+/* mark an actively selected route row for clear affordance */
+.activeRow {
+  background: rgba(11,108,246,0.03);
 }
-.div51 {
-    font-size: 21px;
+
+/* Minor accessibility: ensure long names wrap and don't overflow */
+.div9,
+.div10 {
+  word-break: break-word;
+  white-space: normal;
+}
+
+/* Utility: screen-reader-only helper */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* ----------------- Responsive adjustments ----------------- */
+
+/* Small polish on very narrow screens */
+@media (max-width: 420px) {
+  .div7 {
+    gap: 8px;
+    padding-bottom: 16px;
+  }
+  .div7 > .div8 { flex-basis: 100px; }
+  .div7 > .div9 { font-size: clamp(16px, 4.5vw, 20px); }
+  .div7 > .div10 { font-size: clamp(13px, 3.2vw, 18px); color: #666; }
+}
+
+/* Tablet adjustments */
+@media (min-width: 420px) and (max-width: 768px) {
+  .div7 { gap: 10px; }
+  .div7 > .div9 { font-size: clamp(16px, 3.8vw, 20px); }
+  .div7 > .div10 { font-size: clamp(16px, 2.6vw, 20px); }
+}
+
+@media (min-width: $break-tablet-min) and (max-width: $break-tablet-max) {
+  .div7 { gap: 10px; }
+  .div7 > .div9 { font-size: clamp(20px, 3.8vw, 24px); }
+  .div7 > .div10 { font-size: clamp(16px, 2.6vw, 20px); }
+}
+
+/* Hide/Show header toggles */
+@media (max-width: 1023px) {
+  .div12 { display: none !important; }
+  .div13,
+  .div14,
+  .div15 { display: none !important; }
+  .div12Mobile { display: grid !important; }
+}
+
+@media (min-width: $break-desktop) {
+  .div12 { display: grid !important; }
+  .div12Mobile { display: none !important; }
+
+  /* Restore desktop exact grid/sizes */
+  .div7 {
+    display: grid;
+    grid-template-columns: 173px 351px 440px 1fr;
+    // grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 4px;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .div7 > .div8 { font-size: 24px; line-height: 24px; }
+  .div7 > .div9 { font-size: 24px; line-height: 24px; }
+  .div7 > .div10 { font-size: 24px; line-height: 24px; color: $text; }
+  .div7 > .div11 { margin-left: 0; justify-self: end; }
 }

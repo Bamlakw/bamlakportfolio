@@ -7,25 +7,25 @@ import png9 from '../../../src/assets/enjoyabowl/image9.webp';
 import Png4 from '../../../src/assets/enjoyabowl/image6.mp4';
 import Png3 from '../../../src/assets/enjoyabowl/image7.webp';
 import Png5 from '../../../src/assets/enjoyabowl/image5.webp';
-import Png6 from '../../../src/assets/enjoyabowl/image3.png';
+// import Png6 from '../../../src/assets/enjoyabowl/image3.png';
 import Png10 from '../../../src/assets/enjoyabowl/image2.webp';
 import Png11 from '../../../src/assets/enjoyabowl/image11.webp';
 import Frame427319124LllPng from '../../../src/assets/enjoyabowl/image1.webp';
-
+import beastGalleryStyles from '../beast/beastGallery.module.scss';
 
 export const EnjoyabowlGallery: React.FC = () => {
     const videoRef = useRef<HTMLVideoElement | null>(null);
-        const [isPlaying, setIsPlaying] = useState(true);
-    
-        const handlePlayPause = () => {
-            if (!videoRef.current) return;
-            if (isPlaying) {
-                videoRef.current.pause();
-            } else {
-                videoRef.current.play();
-            }
-            setIsPlaying(!isPlaying);
-        };
+    const [isPlaying, setIsPlaying] = useState(true);
+
+    const handlePlayPause = () => {
+        if (!videoRef.current) return;
+        if (isPlaying) {
+            videoRef.current.pause();
+        } else {
+            videoRef.current.play();
+        }
+        setIsPlaying(!isPlaying);
+    };
     return (
         <section
             className={classNames(
@@ -48,7 +48,6 @@ export const EnjoyabowlGallery: React.FC = () => {
                     styles.div1
                 )}
             >
-
                 <img
                     src={Frame427319124LllPng}
                     alt="Luna Product Showcase"
@@ -71,17 +70,16 @@ export const EnjoyabowlGallery: React.FC = () => {
                         styles.img1
                     )}
                 />
-                <img
-                    src={Png6}
-                    alt="Luna Product Details"
-                    className={classNames(
-                        'w-full',
-                        'h-[1014.566px]',
-                        'max-lg:h-auto',
-                        'object-cover',
-                        styles.img3
-                    )}
-                />
+                <p className={classNames(styles.p1, beastGalleryStyles.p1)}>
+                    EnjoyaBowl is an Australian-Chinese superfood brand that blend fresh,
+                    high-quality ingredients with Eastern and Western flavours. Specialising in
+                    granola, it focuses on product development and refining a rich, layered taste
+                    experiance. Beyond granola, EnjoyaBowl offers a range of wholesome, nature
+                    ingredients and snaks.
+                    <br /> <br />
+                    <br />
+                </p>
+
                 <div className={classNames('relative', 'w-full')}>
                     <video
                         ref={videoRef}
@@ -99,7 +97,13 @@ export const EnjoyabowlGallery: React.FC = () => {
                             styles.img2
                         )}
                     >
-                        <track kind="captions" src="" srcLang="en" label="English captions" default />
+                        <track
+                            kind="captions"
+                            src=""
+                            srcLang="en"
+                            label="English captions"
+                            default
+                        />
                         Your browser does not support the video tag.
                     </video>
                     {/* Centered Play/Pause Button Overlay */}
@@ -169,7 +173,13 @@ export const EnjoyabowlGallery: React.FC = () => {
                             styles.img2
                         )}
                     >
-                        <track kind="captions" src="" srcLang="en" label="English captions" default />
+                        <track
+                            kind="captions"
+                            src=""
+                            srcLang="en"
+                            label="English captions"
+                            default
+                        />
                         Your browser does not support the video tag.
                     </video>
                     {/* Centered Play/Pause Button Overlay */}
@@ -210,7 +220,7 @@ export const EnjoyabowlGallery: React.FC = () => {
                         )}
                     </button>
                 </div>
-                
+
                 {/* <img
                     src={Png5}
                     alt="Luna Brand Values"
@@ -222,9 +232,8 @@ export const EnjoyabowlGallery: React.FC = () => {
                         styles.img4
                     )}
                 /> */}
-                
-                
-<img
+
+                <img
                     src={Png3}
                     alt="Luna Brand Values"
                     className={classNames(
@@ -268,7 +277,6 @@ export const EnjoyabowlGallery: React.FC = () => {
                         styles.img5
                     )}
                 />
-                
             </div>
         </section>
     );
